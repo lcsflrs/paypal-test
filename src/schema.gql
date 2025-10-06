@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type UserGQL {
+  id: String!
+  name: String!
+  email: String!
+  age: Int
+}
+
+type Query {
+  getUser(id: String!): UserGQL
+  listUsers(limit: Int!): [UserGQL!]!
+}
